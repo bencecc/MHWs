@@ -1,2 +1,2 @@
 # MHWs
-Code used in teh analysis of marine heatwaves
+Code used in the analysis of marine heatwaves
