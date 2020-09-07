@@ -3,7 +3,7 @@ Code to reproduce the results in: "Complex networks of marine heatwaves reveal t
 
 This document describes how to reproduce the analyses presented in ‘Complex networks of marine heatwaves reveal tipping points in the global ocean’. To reproduce the results, the provided code and data should be placed in folders ~/MHWs/code and ~/MHWs/data, respectively. Data are available at https://figshare.com/s/ec9061c449031aa2b20e
 
-The original analysis was performed using R-3.5.1 on a CentOS 7 cluster with 7 nodes and 72 cores per node. R-4.0.1 is used for data visualization. For proper parallelization, .sh scripts calling R functions and .txt files with parameter values are used. Remember to make .sh scripts executable using chmod +x filename.sh. Ensures that the directory paths and the .sh and .txt files provided are correctly uploaded on your system.
+The original analysis was performed using R-3.5.1 on a CentOS 7 cluster with 7 nodes and 72 cores per node. Data visualization requires R-4.0.1. For proper parallelization, .sh scripts calling R functions and .txt files with parameter values are used. Remember to make .sh scripts executable using chmod +x filename.sh. Ensures that the directory paths and the .sh and .txt files provided are correctly uploaded on your system.
 
 Several functions use multithreading within nodes and this is done with the ‘foreach’ package, which requires registering the number of cores. This number varies among the different functions depending on how much memory is used in performing the calculations. You may wish to consider changing this parameter or use other parallelization approaches that may be most appropriate for your computational environment.
 
