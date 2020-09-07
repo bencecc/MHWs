@@ -1,7 +1,7 @@
 # MHWs
-Code and data to reproduce the results in: "Complex networks of marine heatwaves reveal tipping points in the global ocean".
+Code to reproduce the results in: "Complex networks of marine heatwaves reveal tipping points in the global ocean".
 
-This document describes how to reproduce the analyses presented in ‘Complex networks of marine heatwaves reveal tipping points in the global ocean’. To reproduce the results, the provided code and data should be placed in folders ~/MHWs/code and ~/MHWs/data, respectively.
+This document describes how to reproduce the analyses presented in ‘Complex networks of marine heatwaves reveal tipping points in the global ocean’. To reproduce the results, the provided code and data should be placed in folders ~/MHWs/code and ~/MHWs/data, respectively. Data are available at https://figshare.com/s/ec9061c449031aa2b20e
 
 The original analysis was performed on a CentOS 7 cluster with 7 nodes and 72 cores per node. For proper parallelization, .sh scripts calling R functions and .txt files with parameter values are used. Remember to make .sh scripts executable using chmod +x filename.sh. Ensures that the directory paths and the .sh and .txt files provided are correctly uploaded on your system.
 
@@ -63,7 +63,7 @@ plot_time – plot a TDA network
 
 NOTE: Extended Data Fig. 1 is artwork produced with Adobe Illustrator
 
-Data files
+Data files (available at https://figshare.com/s/ec9061c449031aa2b20e)
 
 The analysis requires several data files. These are divided in four groups identified by a unique prefix: glob, hist, recp26, rcp85, to reflect datasets originating from remotely-sensed, historical RCP 2.6 and RCP 8.5 SSTs, respectively. For each group, different datasets are provided, which allow to reproduce the TDA and Event Synchronization analysis and to generate the main figures in the paper. A brief description of each dataset is provided here using glob data as an example (suffix .RData is omitted from the description below for clarity).
 
