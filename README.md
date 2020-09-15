@@ -137,48 +137,47 @@ glob_map_duration.nc – this .nc file includes raster layers of average duratio
 
 es_plotdat_tauXX – datasets to plot the results of event synchronization analysis
 
-spread_year_hist –dataset of the spread of years along the temporal connectivity matrix columns used to generate Fig. 3.
+spread_year_hist – dataset of the spread of years along the temporal connectivity matrix columns used to generate Fig. 3.
 
 world_dt_robin – data table with coastlines for global plots of MHWs with robin projection 
 
 # ---- Required R libraries ---- #
 
-abind
-bigstatsr
-cmocean
-colorspace
-data.table
-doMC
-dplyr
-fastcluster
-foreach
-fractal
-ggpubr
-ggplot2
-ggsci
-ggthemes
-heatwaveR
-igraph
-maps
-Matrix
-ncdf4
-ncdf4.helpers
-PCICt
-raster
-rasterVis
-RColorBrewer
-Rcpp
-rgdal
-rgeos
-reticulate
-sf
-stars
-stringr
-TDAmapper
-tidyr
-uwot
-VertexSort
-viridis
-wesanderson
-wordspace
-
+abind -
+bigstatsr -
+cmocean -
+colorspace -
+data.table -
+doMC -
+dplyr -
+fastcluster -
+foreach -
+fractal -
+ggpubr -
+ggplot2 -
+ggsci -
+ggthemes -
+heatwaveR -
+igraph -
+maps -
+Matrix -
+ncdf4 -
+ncdf4.helpers -
+PCICt -
+raster -
+rasterVis -
+RColorBrewer -
+Rcpp -
+rgdal -
+rgeos -
+reticulate -
+sf -
+stars -
+stringr -
+TDAmapper -
+tidyr -
+uwot -
+VertexSort -
+viridis -
+wesanderson -
+wordspace -
