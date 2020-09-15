@@ -13,7 +13,7 @@ and https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html, respectiv
 
 The key scripts to reproduce the pipelines are TDA_pipeline and ES_pipeline. These scripts use several R packages and call many functions in R. In addition, some of the analyses use .cpp or .py functions. The ‘Rcpp’ and ‘reticulate’ packages are required to use C++ and Python resources in R. In addition, the Python modules ‘cpalgorithm’ and ‘networkx’ are needed.
 
-# ---- Code for Topological Data Analysis (TDA) ---- 
+## ---- Code for Topological Data Analysis (TDA) ---- 
 
 TDA_pipeline.R – main function to perform all steps of the TDA analysis
 
@@ -42,7 +42,7 @@ temporal_connectivity.R – function to compute the temporal connectivity matrix
 Additional code
 Each of the .R functions above has a corresponding .sh script to enable parallel computation.
 
-# ---- Code for Event Synchronization Analysis (ES) ---- 
+## ---- Code for Event Synchronization Analysis (ES) ---- 
 
 EvSync_pipeline.R –main function to perform all steps in the ES analysis
 
@@ -60,10 +60,10 @@ EvSync_cell_dist.R – compute great-circle distances between significantly link
 
 EvSync_allDist.R – compute all possible great-circle distances
 
-# ---- Additional code ---- 
+### ---- Additional code ---- 
 Each of the .R functions above has a corresponding .sh script to enable parallel computation.
 
-# ---- Code for visualization ---- 
+## ---- Code for visualization ---- 
 
 Fig.1.R – Fig. 1 of main paper
 
@@ -95,7 +95,7 @@ plot_time.R – plot a TDA network
 
 NOTE: Extended Data Fig. 1 is artwork produced with Adobe Illustrator
 
-# ---- Data files (available at https://figshare.com/s/ec9061c449031aa2b20e) ---- 
+## ---- Data files (available at https://figshare.com/s/ec9061c449031aa2b20e) ---- 
 
 The analysis requires several data files. These are divided in four groups identified by a unique prefix: glob, hist, recp26, rcp85, to reflect datasets originating from remotely-sensed, historical RCP 2.6 and RCP 8.5 SSTs, respectively. For each group, different datasets are provided, which allow to reproduce the TDA and Event Synchronization analysis and to generate the main figures in the paper. A brief description of each dataset is provided here using glob data as an example (suffix .RData is omitted from the description below for clarity).
 
@@ -123,7 +123,7 @@ glob_years_lens – tibble including elapsed days for plotting
 
 tcm_glob_red – temporal connectivity matrix (data table) reduced by a factor 10 for plotting
 
-Additional datasets for analysis
+### ---- Additional datasets for analysis ----
 
 Datasets of node degree and results from null distributions are provided for the Historical and RCP 8.5 scenarios to reproduce Extended Data Figs. 3 and 4:
 
@@ -131,7 +131,7 @@ hist_degree_ind/ rcp85_degree_ind – node degree from individual models with me
 
 hist_deg_null/rcp85_deg_null – mean and SD from null models to compute CIs of node degree
 
-# ---- Additional data for visualization ---- 
+### ---- Additional data for visualization ---- 
 
 glob_map_duration.nc – this .nc file includes raster layers of average duration of MHWs for each node in the corresponding network (analogous files are available for hist, rcp26 and rcp85) and allow quick coloring of maps. Please be aware that the Time axis identifies network nodes, not time in the .nc files. For example, the rcp85 network has 1922 nodes, so the corresponding rcp85_map_duration.nc file has 1922 layers. The file can be importerd into a raster brick (or stack) to reproduce Extended Data Fig. 2. Only one of eight possible covariates is provided to save disk space. Using function net_to_map it is possible to generate .nc files for the whole set of covariates. This is also described in the ExtData_Fig.2.R script. These .nc files allow to quickly select mapping variables and are used in the web application available at: http://calcoloecologia.biologia.unipi.it:3838/MHW_App.
 
@@ -141,7 +141,7 @@ spread_year_hist – dataset of the spread of years along the temporal connectiv
 
 world_dt_robin – data table with coastlines for global plots of MHWs with robin projection 
 
-# ---- Required R libraries ---- 
+## ---- Required R libraries ---- 
 
 abind -
 bigstatsr -
