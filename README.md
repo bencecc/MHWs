@@ -180,4 +180,4 @@ uwot -
 VertexSort -
 viridis -
 wesanderson -
-wordspace -
+wordspace
