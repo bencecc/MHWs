@@ -133,11 +133,11 @@ hist_deg_null/rcp85_deg_null – mean and SD from null models to compute CIs of 
 
 ### ---- Additional data for visualization ---- 
 
-glob_map_duration.nc – this .nc file includes raster layers of average duration of MHWs for each node in the corresponding network (analogous files are available for hist, rcp26 and rcp85) and allow quick coloring of maps. Please be aware that the Time axis identifies network nodes, not time in the .nc files. For example, the rcp85 network has 1922 nodes, so the corresponding rcp85_map_duration.nc file has 1922 layers. The file can be importerd into a raster brick (or stack) to reproduce Extended Data Fig. 2. Only one of eight possible covariates is provided to save disk space. Using function net_to_map it is possible to generate .nc files for the whole set of covariates. This is also described in the ExtData_Fig.2.R script. These .nc files allow to quickly select mapping variables and are used in the web application available at: http://calcoloecologia.biologia.unipi.it:3838/MHW_App.
+glob_map_duration.nc – this .nc file includes raster layers of average duration of MHWs for each node in the corresponding network (analogous files are available for hist, rcp26 and rcp85) and allow quick coloring of maps. Please be aware that the Time axis identifies network nodes, not time in the .nc files. For example, the rcp85 network has 1922 nodes, so the corresponding rcp85_map_duration.nc file has 1922 layers. The file can be importerd into a raster brick (or stack) to reproduce Supplementary Fig. 1. Only one of eight possible covariates is provided to save disk space. Using function net_to_map it is possible to generate .nc files for the whole set of covariates. This is also described in the Supp_Fig.1.R script. These .nc files allow to quickly select mapping variables and are used in the web application available at: http://calcoloecologia.biologia.unipi.it:3838/MHW_App.
 
 es_plotdat_tauXX – datasets to plot the results of event synchronization analysis
 
-spread_year_hist – dataset of the spread of years along the temporal connectivity matrix columns used to generate Fig. 3.
+spread_year_hist – dataset of the spread of years along the temporal connectivity matrix columns used to generate Fig. 4.
 
 world_dt_robin – data table with coastlines for global plots of MHWs with robin projection 
 
