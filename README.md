@@ -73,17 +73,17 @@ Fig.4.R – Fig. 4 of main paper
 
 Fig.5.R – Fig. 5 of main paper
 
-ExtData_Fig.2.R – Supplementary Fig. 1
+Supp_Fig.1.R – Supplementary Fig. 1
 
-ExtData_Fig.3.R – Supplementary Fig. 2
+Supp_Fig.2.R – Supplementary Fig. 2
 
-ExtData_Fig.4.R – Supplementary Fig. 3
+Supp_Fig.3.R – Supplementary Fig. 3
 
-ExtData_Fig.5.R – Supplementary Fig. 4
+Supp_Fig.4.R – Supplementary Fig. 4
 
-ExtData_Figs_6_9.R – Supplementary Figs. 5-8
+Supp_Figs_5_8.R – Supplementary Figs. 5-8
 
-ExtData_Fig.10.R – Supplementary Fig. 9
+Supp_Fig.9.R – Supplementary Fig. 9
 
 color_nodes_time.R – aggregates (mean, sum) covariate values among timeframes in a node; used to annotate network graphs by covariate values
 
@@ -93,7 +93,7 @@ net_to_time.R – displays time series of node attributes from selected nodes in
 
 plot_time.R – plot a TDA network
 
-NOTE: Extended Data Fig. 1 is artwork produced with Adobe Illustrator
+NOTE: Individual panels of Fig. 1 were generated with R 4.0.2 and the figure was annotaed with Adobe Illustrator
 
 ## ---- Data files (available at https://figshare.com/s/ec9061c449031aa2b20e) ---- 
 
