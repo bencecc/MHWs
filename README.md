@@ -65,25 +65,25 @@ Each of the .R functions above has a corresponding .sh script to enable parallel
 
 ## ---- Code for visualization ---- 
 
-Fig.1.R – Fig. 1 of main paper
-
-Fig. 2.R – Fig. 2 of main paper
+Fig.2.R – Fig. 2 of main paper
 
 Fig.3.R – Fig. 3 of main paper
 
 Fig.4.R – Fig. 4 of main paper
 
-ExtData_Fig.2.R – Extended Data Fig. 2
+Fig.5.R – Fig. 5 of main paper
 
-ExtData_Fig.3.R – Extended Data Fig. 3
+ExtData_Fig.2.R – Supplementary Fig. 1
 
-ExtData_Fig.4.R – Extended Data Fig. 4
+ExtData_Fig.3.R – Supplementary Fig. 2
 
-ExtData_Fig.5.R – Extended Data Fig. 5
+ExtData_Fig.4.R – Supplementary Fig. 3
 
-ExtData_Figs_6_9.R – Extended Data Figs. 6-9
+ExtData_Fig.5.R – Supplementary Fig. 4
 
-ExtData_Fig.10.R – Extended Data Fig. 10
+ExtData_Figs_6_9.R – Supplementary Figs. 5-8
+
+ExtData_Fig.10.R – Supplementary Fig. 9
 
 color_nodes_time.R – aggregates (mean, sum) covariate values among timeframes in a node; used to annotate network graphs by covariate values
 
